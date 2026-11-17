@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>OEM 合作伙伴计划 · 品牌授权 + 推荐官</title>
+<meta name="description" content="OEM 品牌授权 ¥1,999，OEM 推荐官 ¥3,999，两项合计 ¥5,998。用你自己的品牌，做你自己的客户——贴牌卖产品 + 推荐拿分润，两条收益线。专属合作价请联系顾问确认。" />
+<meta name="theme-color" content="#05060A" />
+<script>document.documentElement.classList.add("js");</script>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OEM 合作伙伴计划 · 品牌授权 + 推荐官" />
+<meta property="og:description" content="一次开通，两项权益到手。用你自己的品牌，做你自己的客户。OEM 品牌授权 ¥1,999，推荐官 ¥3,999。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308090E'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23D9B471' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{
+    --ink:#05060A;
+    --ink-2:#080A10;
+    --panel:#0C0E14;
+    --panel-2:#101319;
+    --line:rgba(214,178,110,.15);
+    --line-soft:rgba(255,255,255,.06);
+    --gold-1:#FBF0D2;
+    --gold-2:#E3C384;
+    --gold-3:#B98E45;
+    --gold-4:#8A6229;
+    --text:#EDEAE3;
+    --muted:#9A99A1;
+    --dim:#6B6A73;
+    --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --num:Georgia,"Times New Roman","Songti SC",serif;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--ink);color:var(--text);font-family:var(--sans);
+    line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    font-feature-settings:"palt" 1;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+    background-image:radial-gradient(1200px 600px at 50% -8%,rgba(214,178,110,.12),transparent 60%),
+                     radial-gradient(900px 500px at 88% 8%,rgba(120,90,200,.06),transparent 60%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.028;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  main,header,footer{position:relative;z-index:2}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .gold-text{
+    background:linear-gradient(180deg,var(--gold-1) 0%,var(--gold-2) 40%,var(--gold-3) 76%,var(--gold-4) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .kicker{
+    font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-3);
+    font-family:var(--num);
+  }
+  .sec{padding:104px 0;position:relative}
+  .sec-head{max-width:720px;margin:0 0 56px}
+  .sec-head .kicker{display:block;margin-bottom:18px}
+  .sec-head h2{
+    margin:0;font-size:clamp(26px,3.6vw,40px);font-weight:700;letter-spacing:-.01em;line-height:1.34;
+  }
+  .sec-head p{margin:16px 0 0;color:var(--muted);font-size:15.5px;max-width:620px}
+  .hairline{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);border:0;margin:0}
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    background:rgba(5,6,10,.72);border-bottom:1px solid transparent;transition:border-color .3s,background .3s;
+  }
+  .nav.stuck{border-bottom-color:var(--line-soft);background:rgba(5,6,10,.9)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;font-size:14px;letter-spacing:.04em}
+  .brand i{
+    width:26px;height:26px;border-radius:8px;display:grid;place-items:center;flex:0 0 auto;
+    background:linear-gradient(160deg,#1b1a17,#0b0c11);border:1px solid var(--line);
+    font-family:var(--num);font-size:14px;font-style:normal;color:var(--gold-2);
+  }
+  .brand b{font-weight:600}
+  .brand span{color:var(--dim);font-size:12px;letter-spacing:.18em;margin-left:2px}
+  .nav-links{display:flex;gap:30px;font-size:13.5px;color:var(--muted)}
+  .nav-links a{transition:color .2s}
+  .nav-links a:hover{color:var(--gold-2)}
+  .nav .btn{padding:9px 18px;font-size:13px}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;border:0;
+    font-family:var(--sans);font-size:14.5px;font-weight:600;letter-spacing:.02em;
+    padding:15px 30px;border-radius:2px;transition:transform .18s ease,box-shadow .3s ease,background .3s,color .3s;
+    white-space:nowrap;
+  }
+  .btn-gold{
+    color:#20180A;background:linear-gradient(165deg,#FBF0D2,#E6C88D 44%,#C39A51 100%);
+    box-shadow:0 10px 30px -12px rgba(214,178,110,.55),inset 0 1px 0 rgba(255,255,255,.5);
+  }
+  .btn-gold:hover{transform:translateY(-1px);box-shadow:0 16px 42px -14px rgba(214,178,110,.7),inset 0 1px 0 rgba(255,255,255,.55)}
+  .btn-ghost{color:var(--text);background:transparent;border:1px solid var(--line);box-shadow:none}
+  .btn-ghost:hover{border-color:rgba(214,178,110,.5);color:var(--gold-1)}
+  .btn:active{transform:translateY(0) scale(.995)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:76px 0 74px;overflow:hidden}
+  .hero-bg{
+    position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60% 46% at 50% 0%,rgba(214,178,110,.16),transparent 62%),
+      radial-gradient(40% 30% at 78% 26%,rgba(180,140,80,.07),transparent 60%);
+  }
+  .hero-bg::after{
+    content:"";position:absolute;left:50%;top:-160px;transform:translateX(-50%);
+    width:760px;height:760px;border-radius:50%;
+    border:1px solid rgba(214,178,110,.10);
+    box-shadow:0 0 0 1px rgba(214,178,110,.04) inset;
+  }
+  .hero-in{position:relative;z-index:1;text-align:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 12px;border-radius:100px;
+    border:1px solid var(--line);background:rgba(214,178,110,.045);
+    font-size:12px;letter-spacing:.16em;color:var(--gold-2);
+  }
+  .eyebrow em{width:5px;height:5px;border-radius:50%;background:var(--gold-2);box-shadow:0 0 10px 2px rgba(227,195,132,.55);font-style:normal}
+  h1{
+    margin:30px 0 0;font-size:clamp(38px,7.2vw,78px);line-height:1.1;font-weight:800;letter-spacing:-.02em;
+  }
+  h1 .plus{
+    display:block;font-family:var(--num);font-weight:400;font-size:.5em;color:rgba(214,178,110,.62);
+    margin:6px 0 4px;letter-spacing:0;
+  }
+  h1 .thin{font-weight:300;color:#CFC9BC}
+  .lede{margin:26px auto 0;max-width:600px;color:#B6B4AE;font-size:clamp(14.5px,1.7vw,17px);line-height:1.85}
+  .lede b{color:var(--text);font-weight:600}
+
+  .quote{
+    margin:34px auto 0;max-width:640px;padding:18px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+    display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;
+    font-size:13px;letter-spacing:.12em;color:var(--dim);
+  }
+  .quote i{width:4px;height:4px;border-radius:50%;background:var(--gold-4);font-style:normal}
+
+  .price-strip{
+    margin:44px auto 0;max-width:760px;display:grid;grid-template-columns:1fr 1fr 1.15fr;
+    border:1px solid var(--line);background:linear-gradient(180deg,rgba(214,178,110,.055),rgba(255,255,255,.012));
+    border-radius:3px;overflow:hidden;
+  }
+  .ps{padding:24px 20px;text-align:left;position:relative}
+  .ps+.ps{border-left:1px solid var(--line)}
+  .ps span{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.1em;margin-bottom:10px}
+  .ps b{display:block;font-family:var(--num);font-size:clamp(24px,3.4vw,32px);font-weight:400;line-height:1;color:var(--gold-1)}
+  .ps s{display:inline-block;margin-top:9px;font-family:var(--num);font-size:13px;color:#807F88;text-decoration-thickness:1px;text-decoration-color:rgba(150,150,162,.8)}
+  .ps.total{background:linear-gradient(180deg,rgba(214,178,110,.10),rgba(214,178,110,.02))}
+  .ps.total b{font-size:clamp(30px,4.4vw,44px)}
+  .ps .tag{
+    position:absolute;right:14px;top:14px;font-size:10.5px;letter-spacing:.08em;color:#231A08;
+    background:linear-gradient(160deg,#F0D9A6,#C79E56);padding:3px 8px;border-radius:2px;font-weight:700;
+  }
+  .cta-row{margin:38px 0 0;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .hero-foot{margin-top:26px;font-size:12.5px;letter-spacing:.22em;color:var(--dim)}
+  .hero-note{margin:22px 0 0;font-size:13px;color:var(--dim);letter-spacing:.02em}
+  .hero-note span{color:var(--gold-3)}
+
+  /* ---------- problem ---------- */
+  .pain{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+  .pain h2{margin:0;font-size:clamp(24px,3.2vw,34px);line-height:1.5;font-weight:700;letter-spacing:-.01em}
+  .pain h2 em{font-style:normal;color:var(--gold-3)}
+  .pain-list{display:grid;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+  .pain-item{background:var(--ink-2);padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+  .pain-item i{font-family:var(--num);font-size:12px;color:var(--gold-4);font-style:normal;padding-top:4px;min-width:20px}
+  .pain-item b{display:block;font-size:15px;font-weight:600;margin-bottom:4px}
+  .pain-item p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.65}
+
+  /* ---------- rights cards ---------- */
+  .rights{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .card{
+    position:relative;border:1px solid var(--line);border-radius:4px;padding:34px 32px 30px;
+    background:linear-gradient(180deg,rgba(255,255,255,.028),rgba(255,255,255,0));
+    transition:border-color .35s,transform .35s,background .35s;overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .45s;
+    background:radial-gradient(420px 200px at 50% 0%,rgba(214,178,110,.12),transparent 70%);
+  }
+  .card:hover{border-color:rgba(214,178,110,.38);transform:translateY(-3px)}
+  .card:hover::before{opacity:1}
+  .card-flag{
+    position:absolute;right:0;top:0;font-size:11px;letter-spacing:.14em;padding:6px 14px;
+    background:linear-gradient(160deg,#F0D9A6,#C79E56);color:#231A08;font-weight:700;
+    border-bottom-left-radius:3px;
+  }
+  .card h3{margin:0;font-size:20px;font-weight:700;letter-spacing:.01em}
+  .card .en{display:block;font-family:var(--num);font-size:11px;letter-spacing:.26em;color:var(--gold-4);margin-bottom:12px;text-transform:uppercase}
+  .card .price{margin:20px 0 4px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .card .price b{font-family:var(--num);font-size:42px;font-weight:400;line-height:1;color:var(--gold-1)}
+  .card .price s{font-family:var(--num);font-size:14.5px;color:#83828B;text-decoration-thickness:1px;text-decoration-color:rgba(150,150,162,.8)}
+  .card .price u{text-decoration:none;font-size:11.5px;color:var(--gold-3);border:1px solid rgba(214,178,110,.28);padding:2px 7px;border-radius:2px;letter-spacing:.06em}
+  .card ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;border-top:1px solid var(--line-soft);padding-top:22px}
+  .card li{position:relative;padding-left:22px;font-size:14px;color:#C4C2BC;line-height:1.6}
+  .card li::before{
+    content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;
+    border:1px solid var(--gold-3);transform:rotate(45deg);
+  }
+  .card li b{color:var(--text);font-weight:600}
+
+  /* ---------- compare table ---------- */
+  .cmp{margin-top:30px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0))}
+  .cmp table{width:100%;border-collapse:collapse;font-size:14px}
+  .cmp th,.cmp td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line-soft)}
+  .cmp thead th{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.06em;background:rgba(214,178,110,.04)}
+  .cmp thead th.hi{color:var(--gold-1)}
+  .cmp thead th:first-child{width:40%}
+  .cmp thead th small{display:block;font-family:var(--num);font-size:12px;color:var(--gold-3);letter-spacing:.04em;margin-top:4px;font-weight:400}
+  .cmp tbody tr:last-child td{border-bottom:0}
+  .cmp tbody tr:hover{background:rgba(255,255,255,.018)}
+  .cmp td:first-child{color:#C4C2BC}
+  .cmp td.c{text-align:center;width:22%;font-size:15px}
+  .cmp .yes{color:var(--gold-2)}
+  .cmp .no{color:#43424B}
+  .cmp .hi-col{background:rgba(214,178,110,.045)}
+  .cmp-note{margin:14px 0 0;font-size:12px;color:var(--dim);letter-spacing:.02em}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+  .feat{background:var(--ink-2);padding:30px 26px 34px;transition:background .35s}
+  .feat:hover{background:#0B0D13}
+  .feat i{font-family:var(--num);font-size:11.5px;letter-spacing:.16em;color:var(--gold-4);font-style:normal;display:block;margin-bottom:34px}
+  .feat h4{margin:0 0 8px;font-size:16.5px;font-weight:700;letter-spacing:.02em}
+  .feat .sub{font-size:12.5px;color:var(--gold-3);letter-spacing:.06em;margin-bottom:12px}
+  .feat p{margin:0;font-size:13px;color:var(--muted);line-height:1.72}
+
+  /* ---------- income lanes ---------- */
+  .lanes{display:grid;gap:14px}
+  .lane{
+    display:grid;grid-template-columns:190px 1fr auto;gap:28px;align-items:center;
+    border:1px solid var(--line);border-radius:3px;padding:26px 28px;
+    background:linear-gradient(90deg,rgba(214,178,110,.06),rgba(255,255,255,.012) 42%,rgba(255,255,255,0));
+  }
+  .lane .no{font-family:var(--num);font-size:11.5px;letter-spacing:.2em;color:var(--gold-4)}
+  .lane h4{margin:8px 0 0;font-size:17px;font-weight:700}
+  .lane p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.7;max-width:520px}
+  .lane .val{text-align:right;font-size:12px;letter-spacing:.14em;color:var(--dim);white-space:nowrap}
+  .lane .val b{display:block;font-size:15px;color:var(--gold-2);letter-spacing:.02em;margin-bottom:3px}
+  .lane-sum{
+    margin-top:6px;border:1px solid rgba(214,178,110,.34);border-radius:3px;padding:24px 28px;
+    background:linear-gradient(90deg,rgba(214,178,110,.12),rgba(214,178,110,.03));
+    display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  }
+  .lane-sum span{font-size:14px;color:#CFC9BC;letter-spacing:.04em}
+  .lane-sum b{font-family:var(--num);font-size:clamp(20px,2.6vw,27px);font-weight:400;letter-spacing:.02em}
+
+  /* ---------- upgrade path ---------- */
+  .path{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line-soft);position:relative}
+  .step{padding:34px 28px;position:relative;background:var(--ink-2)}
+  .step+.step{border-left:1px solid var(--line-soft)}
+  .step .badge{
+    display:inline-block;font-size:10.5px;letter-spacing:.16em;color:var(--gold-3);
+    border:1px solid rgba(214,178,110,.24);padding:3px 9px;border-radius:2px;margin-bottom:18px;
+  }
+  .step h4{margin:0 0 10px;font-size:16px;font-weight:700}
+  .step p{margin:0;font-size:13px;color:var(--muted);line-height:1.7}
+  .step .amt{font-family:var(--num);font-size:26px;color:var(--gold-1);margin-top:16px;font-weight:400}
+  .step .amt small{font-size:12px;color:var(--dim);letter-spacing:.06em;font-family:var(--sans);margin-left:6px}
+
+  /* ---------- fit ---------- */
+  .fit{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .fit-box{border:1px solid var(--line-soft);border-radius:3px;padding:30px 30px 34px;background:var(--panel)}
+  .fit-box.no{background:transparent}
+  .fit-box h4{margin:0 0 20px;font-size:15px;letter-spacing:.08em;color:var(--gold-2);font-weight:600}
+  .fit-box.no h4{color:#8C8B93}
+  .fit-box ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+  .fit-box li{font-size:14px;color:#C0BEB8;padding-left:26px;position:relative;line-height:1.62}
+  .fit-box li::before{content:"—";position:absolute;left:0;color:var(--gold-4)}
+  .fit-box.no li{color:#8E8D95}
+  .fit-box.no li::before{content:"—";color:#4A4952}
+
+  /* ---------- faq ---------- */
+  .faq{border-top:1px solid var(--line-soft)}
+  .qa{border-bottom:1px solid var(--line-soft)}
+  .qa>button{
+    width:100%;background:none;border:0;color:inherit;font-family:inherit;text-align:left;cursor:pointer;
+    padding:22px 44px 22px 0;font-size:15.5px;display:flex;justify-content:space-between;gap:20px;align-items:center;
+    position:relative;transition:color .2s;
+  }
+  .qa>button:hover{color:var(--gold-1)}
+  .qa>button::after{
+    content:"";position:absolute;right:8px;top:50%;width:9px;height:9px;
+    border-right:1px solid var(--gold-3);border-bottom:1px solid var(--gold-3);
+    transform:translateY(-70%) rotate(45deg);transition:transform .3s;
+  }
+  .qa.open>button::after{transform:translateY(-30%) rotate(-135deg)}
+  .qa .ans{max-height:0;overflow:hidden;transition:max-height .38s ease}
+  .qa .ans p{margin:0;padding:0 44px 24px 0;color:var(--muted);font-size:14px;line-height:1.78}
+  .qa .ans p b{color:#D5D2CA}
+
+  /* ---------- final cta ---------- */
+  .final{
+    position:relative;text-align:center;padding:96px 0;overflow:hidden;
+    border-top:1px solid var(--line-soft);
+    background:radial-gradient(60% 100% at 50% 110%,rgba(214,178,110,.14),transparent 62%);
+  }
+  .final h2{margin:0;font-size:clamp(27px,4.4vw,46px);line-height:1.3;font-weight:800;letter-spacing:-.015em}
+  .final p{margin:20px auto 0;max-width:520px;color:var(--muted);font-size:14.5px}
+  .final .cta-row{margin-top:34px}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line-soft);padding:48px 0 64px;font-size:12.5px;color:var(--dim)}
+  .foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--gold-2)}
+  .disc{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.04);line-height:1.85;max-width:860px;color:#5F5E66}
+
+  /* ---------- modal ---------- */
+  .mask{
+    position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;
+    background:rgba(3,4,7,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  }
+  .mask.on{display:flex}
+  .modal{
+    width:100%;max-width:470px;border:1px solid rgba(214,178,110,.3);border-radius:6px;
+    background:linear-gradient(180deg,#101319,#080A0F);padding:36px 34px 30px;position:relative;
+    box-shadow:0 40px 100px -30px rgba(0,0,0,.9);animation:pop .3s ease;
+  }
+  @keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+  .modal .x{
+    position:absolute;right:14px;top:12px;width:32px;height:32px;border:0;background:none;color:#6E6D76;
+    font-size:20px;cursor:pointer;line-height:1;border-radius:4px;
+  }
+  .modal .x:hover{color:#fff;background:rgba(255,255,255,.06)}
+  .modal .kicker{display:block;margin-bottom:12px}
+  .modal h3{margin:0;font-size:23px;font-weight:700}
+  .modal .sum{
+    margin:20px 0 0;border:1px solid var(--line);border-radius:3px;padding:14px 16px;display:flex;
+    justify-content:space-between;align-items:center;background:rgba(214,178,110,.05);font-size:13px;color:var(--muted);
+  }
+  .modal .sum b{font-family:var(--num);font-size:22px;color:var(--gold-1);font-weight:400}
+  .tabs{display:flex;gap:8px;margin:24px 0 16px}
+  .tabs button{
+    flex:1;padding:10px;font-size:13px;border:1px solid var(--line-soft);background:transparent;color:var(--muted);
+    cursor:pointer;font-family:inherit;border-radius:2px;transition:.2s;
+  }
+  .tabs button.on{border-color:rgba(214,178,110,.45);color:var(--gold-1);background:rgba(214,178,110,.07)}
+  .qrbox{
+    aspect-ratio:1;max-width:240px;margin:0 auto;border:1px solid var(--line-soft);border-radius:4px;
+    display:grid;place-items:center;text-align:center;padding:18px;background:#0A0C11;
+  }
+  .qrbox img{width:100%;border-radius:2px}
+  .qrbox.textonly{aspect-ratio:auto;max-width:none;margin:14px auto 0;padding:26px 18px;border-color:rgba(214,178,110,.22);background:rgba(214,178,110,.045)}
+  .qrbox .ph{font-size:12.5px;color:var(--dim);line-height:1.8}
+  .qrbox .ph b{display:block;color:var(--gold-3);font-size:13px;margin-bottom:6px;letter-spacing:.04em}
+  .qrbox .wx{cursor:pointer;width:100%;display:grid;place-items:center;gap:8px;padding:6px 0;border-radius:3px;transition:background .2s}
+  .qrbox .wx:hover{background:rgba(214,178,110,.06)}
+  .qrbox .wx .n{font-family:var(--num);font-size:23px;color:var(--gold-1);letter-spacing:.05em;line-height:1.3}
+  .qrbox .wx .h{font-size:11.5px;color:var(--dim);letter-spacing:.02em}
+  .qrbox .wx.copied .h{color:var(--gold-2)}
+  .modal .note{margin:18px 0 0;font-size:12.5px;color:var(--muted);line-height:1.75;text-align:center}
+
+  /* ---------- sticky mobile cta ---------- */
+  .sticky{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;gap:14px;
+    padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+    background:rgba(6,7,11,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);
+  }
+  .sticky .p{flex:1;min-width:0}
+  .sticky .p b{font-family:var(--num);font-size:19px;color:var(--gold-1);font-weight:400;display:block;line-height:1.2}
+  .sticky .p s{font-size:11px;color:var(--dim)}
+  .sticky .btn{padding:12px 22px;font-size:14px}
+
+  /* ---------- reveal ---------- */
+  .rv{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .rv{opacity:0;transform:translateY(20px)}
+  .js .rv.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:960px){
+    .sec{padding:62px 0}
+    .pain{grid-template-columns:1fr;gap:34px}
+    .grid4{grid-template-columns:1fr 1fr}
+    .lane{grid-template-columns:1fr;gap:14px}
+    .lane .val{text-align:left}
+    .path{grid-template-columns:1fr}
+    .step+.step{border-left:0;border-top:1px solid var(--line-soft)}
+    .fit{grid-template-columns:1fr}
+    .nav-links{display:none}
+    .hero{padding:54px 0 70px}
+    .price-strip{grid-template-columns:1fr 1fr}
+    .ps:nth-child(2){border-left:1px solid var(--line)}
+    .ps.total{grid-column:1/-1;border-left:0;border-top:1px solid var(--line)}
+    .rights{grid-template-columns:1fr}
+    .sticky{display:flex}
+    body{padding-bottom:72px}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px}
+    .card{padding:28px 22px}
+    .grid4{grid-template-columns:1fr}
+    .feat i{margin-bottom:22px}
+    .quote{gap:12px;font-size:12px}
+    .hero h1{letter-spacing:-.01em}
+    .modal{padding:30px 22px 24px}
+    .ps{padding:20px 16px}
+    .sec-head{margin-bottom:40px}
+    .cmp th,.cmp td{padding:13px 11px;font-size:12.5px}
+    .cmp td.c{width:27%;font-size:14px}
+    .cmp thead th small{font-size:11px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .rv{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><i>O</i><b>OEM 合作伙伴计划</b><span>PARTNER</span></a>
+    <nav class="nav-links">
+      <a href="#rights">权益</a>
+      <a href="#feature">价值</a>
+      <a href="#income">收益</a>
+      <a href="#price">价格</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <button class="btn btn-gold" data-buy>立即咨询</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-in">
+      <div class="eyebrow rv"><em></em>OEM 合作伙伴计划 · 年度开放</div>
+      <h1 class="rv">
+        <span class="gold-text">OEM 推荐官</span>
+        <span class="plus">+</span>
+        <span class="thin">OEM 品牌授权</span>
+      </h1>
+      <p class="lede rv">一次开通，两项权益到手。<br><b>用你自己的品牌，做你自己的客户。</b></p>
+
+      <div class="quote rv">
+        <span>贴牌卖产品</span><i></i><span>推荐拿分润</span><i></i><span>两条收益线</span>
+      </div>
+
+      <div class="price-strip rv">
+        <div class="ps">
+          <span>OEM 推荐官</span>
+          <b>¥3,999</b>
+        </div>
+        <div class="ps">
+          <span>OEM 品牌授权</span>
+          <b>¥1,999</b>
+        </div>
+        <div class="ps total">
+          <span>两项合计</span>
+          <b>¥5,998</b>
+        </div>
+      </div>
+
+      <div class="cta-row rv">
+        <button class="btn btn-gold" data-buy>咨询合作价</button>
+        <a class="btn btn-ghost" href="#rights">查看权益明细</a>
+      </div>
+      <p class="hero-note rv">页面所示为公开原价，<span>专属合作价请联系顾问一对一确认</span></p>
+      <div class="hero-foot rv">一份投入 · 两条收益 · 长期有效</div>
+    </div>
+  </section>
+
+  <hr class="hairline" />
+
+  <!-- PAIN -->
+  <section class="sec" id="why">
+    <div class="wrap pain">
+      <div class="rv">
+        <span class="kicker">Why OEM</span>
+        <h2 style="margin-top:18px">你卖的每一单，<br>客户记住的都是<em>别人的牌子</em>。</h2>
+        <p style="color:var(--muted);font-size:14.5px;margin:20px 0 0;max-width:440px">
+          做渠道最贵的成本，不是进货价，而是<span style="color:var(--text)">没有属于自己的品牌资产</span>。
+          流量会走、平台会变，只有牌子留在客户心里。
+        </p>
+      </div>
+      <div class="pain-list rv">
+        <div class="pain-item"><i>01</i><div><b>价格不由你定</b><p>同一个产品，谁都在卖，最后只剩拼低价，利润被一层层摊薄。</p></div></div>
+        <div class="pain-item"><i>02</i><div><b>客户不认你</b><p>成交十次，客户依然记不住你是谁，复购永远要重新买流量。</p></div></div>
+        <div class="pain-item"><i>03</i><div><b>积累归零</b><p>换个产品、换个平台，之前所有的口碑与客户关系都带不走。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHTS -->
+  <section class="sec" id="rights" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Two Rights</span>
+        <h2>两项权益，各自独立，也可以一起拿</h2>
+        <p>品牌授权解决「客户认谁」的问题，推荐官解决「收益从哪来」的问题。单开一档即可启动，两档同开即完整闭环。</p>
+      </div>
+
+      <div class="rights">
+        <div class="card rv">
+          <span class="en">Brand License</span>
+          <h3>OEM 品牌授权</h3>
+          <div class="price"><b>¥1,999</b></div>
+          <ul>
+            <li><b>品牌自有</b>——用你的名字对外挂牌，客户认的是你</li>
+            <li><b>自主定价</b>——定价权在你手上，利润空间自己掌握</li>
+            <li>品牌命名、视觉与对外话术，按你的定位落地</li>
+            <li>产品、供应链与服务体系保持统一，你不用从零搭</li>
+            <li>长期有效，一份投入持续使用</li>
+          </ul>
+        </div>
+
+        <div class="card rv">
+          <span class="card-flag">推荐</span>
+          <span class="en">Referral Partner</span>
+          <h3>OEM 推荐官</h3>
+          <div class="price"><b>¥3,999</b></div>
+          <ul>
+            <li><b>推荐分润</b>——推荐他人开通，持续获得推荐回报</li>
+            <li>推荐关系长期绑定，不是一次性买断</li>
+            <li>配套推荐素材与开通流程，不用自己从零讲</li>
+            <li>包含品牌授权全部权益，可自用也可对外</li>
+            <li>长期有效，推荐越多回报越明显</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cmp rv">
+        <table>
+          <thead>
+            <tr>
+              <th>权益项</th>
+              <th class="c">OEM 品牌授权<small>¥1,999</small></th>
+              <th class="c hi">OEM 推荐官<small>¥3,999</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>以自有品牌对外经营</td><td class="c yes">✓</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>定价权归你，自主定利润</td><td class="c yes">✓</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>品牌命名、视觉与对外话术</td><td class="c yes">✓</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>产品、供应链与交付体系</td><td class="c yes">✓</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>推荐他人开通的资格</td><td class="c no">—</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>推荐回报长期结算</td><td class="c no">—</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>推荐素材与开通流程</td><td class="c no">—</td><td class="c yes hi-col">✓</td></tr>
+            <tr><td>后续升级</td><td class="c" style="color:var(--muted);font-size:13px">补差价升级</td><td class="c hi-col" style="color:var(--gold-3);font-size:13px">两项权益已含</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cmp-note rv">「—」表示该档位不含此项权益。</p>
+    </div>
+  </section>
+
+  <!-- FEATURES 01-04 -->
+  <section class="sec" id="feature" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Core Value</span>
+        <h2>四件事，决定这是一门生意还是一次倒卖</h2>
+      </div>
+      <div class="grid4 rv">
+        <div class="feat">
+          <i>01</i>
+          <h4>品牌自有</h4>
+          <div class="sub">Brand ownership</div>
+          <p>对外挂自己的品牌，客户认的是你。成交沉淀成品牌资产，而不是给别人的招牌添砖。</p>
+        </div>
+        <div class="feat">
+          <i>02</i>
+          <h4>自主定价</h4>
+          <div class="sub">Your pricing power</div>
+          <p>价差自己牌。定价权在你手上，利润空间自己掌握——不打价格战，靠品牌做溢价。</p>
+        </div>
+        <div class="feat">
+          <i>03</i>
+          <h4>推荐分润</h4>
+          <div class="sub">Referral income</div>
+          <p>推荐也有收益。推荐他人加入，持续获得推荐回报，把一次成交变成一条长期收益线。</p>
+        </div>
+        <div class="feat">
+          <i>04</i>
+          <h4>可升级</h4>
+          <div class="sub">Upgrade anytime</div>
+          <p>先 1,999 起步，日后补差价升推荐官，不重复付费。先用小成本验证，再决定投入多少。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCOME -->
+  <section class="sec" id="income" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Two Income Lines</span>
+        <h2>贴牌卖产品 + 推荐拿分润 = 两条收益线</h2>
+        <p>一条靠经营，一条靠推荐。两条线互不冲突，同时跑起来才是这门生意的完整结构。</p>
+      </div>
+
+      <div class="lanes">
+        <div class="lane rv">
+          <div>
+            <div class="no">LINE 01</div>
+            <h4>贴牌卖产品</h4>
+          </div>
+          <p>用你自己的品牌对外销售，赚取零售与代理差价。客户认你的牌子，复购和口碑都留在你这里。</p>
+          <div class="val"><b>经营收益</b>持续、可积累</div>
+        </div>
+        <div class="lane rv">
+          <div>
+            <div class="no">LINE 02</div>
+            <h4>推荐拿分润</h4>
+          </div>
+          <p>把项目推荐给同样需要品牌的人，按规则持续获得推荐回报。不需要备货，不需要自己服务客户。</p>
+          <div class="val"><b>推荐收益</b>轻资产、可复制</div>
+        </div>
+        <div class="lane-sum rv">
+          <span>一份投入，两条收益线同时打开</span>
+          <b class="gold-text">长期有效 · 持续经营</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPGRADE PATH -->
+  <section class="sec" id="price" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Upgrade Path</span>
+        <h2>先小步起步，再决定要不要升级</h2>
+        <p>不要求一次到位。1,999 先跑通「有自己的牌子」这一步，验证有客户、有复购，再补差价升级成推荐官。</p>
+      </div>
+
+      <div class="path rv">
+        <div class="step">
+          <span class="badge">STEP 01</span>
+          <h4>品牌授权起步</h4>
+          <p>拿到品牌授权，把牌子挂起来。对外统一以你的品牌出现，先把客户关系握在自己手里。</p>
+          <div class="amt">¥1,999<small>公开原价</small></div>
+        </div>
+        <div class="step">
+          <span class="badge">STEP 02</span>
+          <h4>补差价升级</h4>
+          <p>需要推荐收益时，补 3,999 差价即可升级为推荐官。<b style="color:var(--gold-2)">之前付过的授权费不重复收取</b>，投入不浪费。</p>
+          <div class="amt">+¥3,999<small>差价升级</small></div>
+        </div>
+        <div class="step">
+          <span class="badge">STEP 03</span>
+          <h4>两条线并行</h4>
+          <p>品牌与推荐权益同时在手：一边卖自己的牌子，一边拿推荐回报。这才是两项一次拿全的意义。</p>
+          <div class="amt">¥5,998<small>两项合计</small></div>
+        </div>
+      </div>
+
+      <div class="cta-row rv" style="margin-top:40px;justify-content:flex-start">
+        <button class="btn btn-gold" data-buy>两项一起咨询</button>
+        <button class="btn btn-ghost" data-buy data-plan="auth">只要品牌授权</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIT -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Fit</span>
+        <h2>它适合谁，不适合谁</h2>
+        <p>把不合适的人挡在前面，比把所有人拉进来更负责。</p>
+      </div>
+      <div class="fit">
+        <div class="fit-box rv">
+          <h4>适合你，如果——</h4>
+          <ul>
+            <li>已经在做私域、社群、门店或本地生意，缺一个自己的牌子</li>
+            <li>手上有客户资源，但没有产品体系可以承接</li>
+            <li>想做长期复购的生意，而不是一次性倒卖</li>
+            <li>愿意投入时间经营品牌，接受收益需要积累</li>
+          </ul>
+        </div>
+        <div class="fit-box no rv">
+          <h4>不适合你，如果——</h4>
+          <ul>
+            <li>期待零投入、零经营就能自动赚钱</li>
+            <li>需要有人承诺你固定的月收入数字</li>
+            <li>只想短期套利，不打算长期做客户关系</li>
+            <li>不愿意按统一的产品与服务标准对外交付</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">FAQ</span>
+        <h2>开通前，你可能想先问清楚</h2>
+      </div>
+      <div class="faq rv">
+        <div class="qa">
+          <button>页面上的价格就是最终成交价吗？</button>
+          <div class="ans"><p>页面所示均为<b>公开原价</b>（品牌授权 1,999，推荐官 3,999）。实际成交的<b>专属合作价</b>由顾问根据你的客群规模与投入方式单独给出，需要一对一沟通后确认，不在页面上公开。</p></div>
+        </div>
+        <div class="qa">
+          <button>品牌授权和推荐官，差在哪？</button>
+          <div class="ans"><p><b>品牌授权（1,999）</b>：你获得以自己的品牌对外经营的资格，解决「客户认谁」。<b>推荐官（3,999）</b>：在品牌授权基础上，额外获得推荐他人开通、并持续获得推荐回报的资格。前者是使用权，后者多一条收益线。</p></div>
+        </div>
+        <div class="qa">
+          <button>我先只开品牌授权，还能升级吗？</button>
+          <div class="ans"><p>可以。日后补差价即可升级为推荐官，<b>不重复付费</b>，之前已支付的授权费用不浪费。所以先小步起步没有风险。</p></div>
+        </div>
+        <div class="qa">
+          <button>「用你自己的品牌」具体指什么？</button>
+          <div class="ans"><p>指对外挂牌、命名、定价与客户话术由你决定，客户看到的是你的品牌。产品能力、供应链与服务标准保持统一，你不需要从零搭建产品和交付体系——你经营的是品牌与客户，不是工厂。</p></div>
+        </div>
+        <div class="qa">
+          <button>推荐回报怎么算、怎么结？</button>
+          <div class="ans"><p>推荐关系开通后长期绑定，按当期公布的分润规则结算。具体比例与结算周期以开通时提供的书面规则为准，规则会随政策调整并提前告知。</p></div>
+        </div>
+        <div class="qa">
+          <button>需要囤货吗？有任务量要求吗？</button>
+          <div class="ans"><p>不需要囤货，也没有硬性任务量考核。你的投入就是这一次授权费用，卖多少、推多少由你自己决定。</p></div>
+        </div>
+        <div class="qa">
+          <button>授权是永久的吗？</button>
+          <div class="ans"><p>按授权协议约定长期有效。协议同时约定双方的权利义务，包括品牌使用规范与服务标准——遵守规范是持续有效的前提。</p></div>
+        </div>
+        <div class="qa">
+          <button>付款后多久能开通？</button>
+          <div class="ans"><p>完成支付并提交品牌信息后，一般 <b>24 小时内</b>完成开通，并交付品牌授权说明、对外话术与推荐素材。信息不完整的会先与你确认。</p></div>
+        </div>
+        <div class="qa">
+          <button>可以退款吗？能开发票吗？</button>
+          <div class="ans"><p>这是数字化授权类产品，<b>开通后不支持退款</b>，下单前请确认需求；未开通前可申请全额退回。可开具正规发票，开通时告知抬头与税号即可。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="wrap">
+      <span class="kicker rv">Start Now</span>
+      <h2 class="rv" style="margin-top:18px">一份投入，两条收益，长期有效。</h2>
+      <p class="rv">品牌授权 ¥1,999 + 推荐官 ¥3,999，两项合计 <b style="color:var(--gold-1);font-family:var(--num);font-size:1.15em">¥5,998</b>。</p>
+      <div class="cta-row rv">
+        <button class="btn btn-gold" data-buy>咨询专属合作价</button>
+      </div>
+      <p class="rv" style="margin-top:22px;font-size:12.5px;color:var(--gold-3);letter-spacing:.06em">加微信 <b style="font-family:var(--num);font-size:15px;font-weight:400;letter-spacing:.05em">15323452761</b>，专属合作价一对一说明</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand" style="margin-bottom:12px"><i>O</i><b>OEM 合作伙伴计划</b></div>
+        <div style="font-size:12px;letter-spacing:.14em;color:var(--dim)">BRAND LICENSE · REFERRAL PARTNER</div>
+        <div style="font-size:12.5px;color:var(--muted);margin-top:10px">咨询微信 <span style="font-family:var(--num);color:var(--gold-2);letter-spacing:.05em;font-size:14px">15323452761</span></div>
+      </div>
+      <div class="foot-links">
+        <a href="#rights">权益说明</a>
+        <a href="#price">价格与升级</a>
+        <a href="#faq">常见问题</a>
+        <a href="#" data-buy>联系开通</a>
+      </div>
+    </div>
+    <p class="disc">
+      说明：页面所示价格均为公开原价，可能随政策调整；<b style="color:#8B8A93">专属合作价由顾问根据客群与投入方式单独给出，以双方沟通确认的结果为准</b>。OEM 品牌授权指在授权范围内以自有品牌对外经营的权利，产品与服务标准由平台统一。推荐回报取决于实际推荐结果，页面不构成任何形式的收益承诺或保底约定。具体权利义务以双方签署的授权协议为准。
+    </p>
+    <p style="margin:16px 0 0;color:#4E4D56">© <span id="yr">2026</span> OEM 合作伙伴计划 · 保留所有权利</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky" id="sticky">
+  <div class="p"><b>¥5,998</b><s>两项权益 · 公开原价</s></div>
+  <button class="btn btn-gold" data-buy>咨询合作价</button>
+</div>
+
+<!-- MODAL -->
+<div class="mask" id="mask">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="x" id="closeModal" aria-label="关闭">×</button>
+    <span class="kicker">Contact</span>
+    <h3 id="mTitle">添加顾问，获取专属合作价</h3>
+    <div class="sum">
+      <span id="planName">两项权益合计（公开原价）</span>
+      <b id="planPrice">¥5,998</b>
+    </div>
+    <div class="qrbox" id="qrbox"></div>
+    <p class="note" id="payNote">添加后说明你的品牌与客群方向，顾问会给出对应档位和专属合作价。</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ========= 联系方式配置 ========= */
+  var PAY = {
+    wechatQR: "",                        // 有二维码时填 assets/qr-wechat.png
+    wechatId: "15323452761",             // 顾问微信号 / 手机号
+    note: "添加时备注「OEM」，顾问会给出对应档位与专属合作价。"
+  };
+
+  var PLANS = {
+    all:  { name: "两项权益合计（公开原价）", price: "¥5,998" },
+    auth: { name: "OEM 品牌授权（公开原价）", price: "¥1,999" },
+    ref:  { name: "OEM 推荐官（公开原价）", price: "¥3,999" }
+  };
+
+  /* nav */
+  var nav = document.getElementById("nav");
+  var onScroll = function(){
+    if (nav) nav.classList.toggle("stuck", window.scrollY > 12);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* reveal */
+  var items = [].slice.call(document.querySelectorAll(".rv"));
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    items.forEach(function(el, i){
+      el.style.transitionDelay = Math.min(i * 40, 240) + "ms";
+      io.observe(el);
+    });
+  } else {
+    items.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* faq */
+  [].forEach.call(document.querySelectorAll(".qa"), function(qa){
+    var btn = qa.querySelector("button");
+    var ans = qa.querySelector(".ans");
+    btn.addEventListener("click", function(){
+      var open = qa.classList.contains("open");
+      [].forEach.call(document.querySelectorAll(".qa.open"), function(o){
+        o.classList.remove("open");
+        o.querySelector(".ans").style.maxHeight = "0px";
+      });
+      if (!open) {
+        qa.classList.add("open");
+        ans.style.maxHeight = ans.scrollHeight + 40 + "px";
+      }
+    });
+  });
+
+  /* modal */
+  var mask = document.getElementById("mask");
+  var qrbox = document.getElementById("qrbox");
+  var payNote = document.getElementById("payNote");
+  var planNameEl = document.getElementById("planName");
+  var planPriceEl = document.getElementById("planPrice");
+  var lastFocus = null;
+
+  function renderContact(){
+    qrbox.className = "qrbox";
+    if (PAY.wechatQR) {
+      qrbox.innerHTML = '<img src="' + PAY.wechatQR + '" alt="顾问微信二维码">';
+    } else if (PAY.wechatId) {
+      qrbox.classList.add("textonly");
+      qrbox.innerHTML =
+        '<div class="ph wx" id="wxc"><b>顾问微信</b>' +
+        '<span class="n">' + PAY.wechatId + '</span>' +
+        '<span class="h">点击号码复制 · 添加时备注「OEM」</span></div>';
+      var wxc = document.getElementById("wxc");
+      wxc.addEventListener("click", function(){
+        var done = function(){
+          wxc.classList.add("copied");
+          wxc.querySelector(".h").textContent = "已复制，打开微信粘贴搜索";
+        };
+        var fb = function(){
+          var ta = document.createElement("textarea");
+          ta.value = PAY.wechatId;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand("copy"); done(); } catch (e) {}
+          document.body.removeChild(ta);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(PAY.wechatId).then(done, fb);
+        } else { fb(); }
+      });
+    } else {
+      qrbox.innerHTML = '<div class="ph"><b>顾问微信</b>二维码待配置</div>';
+    }
+    payNote.textContent = PAY.note;
+  }
+
+  function openModal(plan){
+    var p = PLANS[plan] || PLANS.all;
+    planNameEl.textContent = p.name;
+    planPriceEl.textContent = p.price;
+    renderContact();
+    lastFocus = document.activeElement;
+    mask.classList.add("on");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    mask.classList.remove("on");
+    document.body.style.overflow = "";
+    if (lastFocus) lastFocus.focus();
+  }
+
+  [].forEach.call(document.querySelectorAll("[data-buy]"), function(el){
+    el.addEventListener("click", function(e){
+      e.preventDefault();
+      openModal(el.getAttribute("data-plan") || "all");
+    });
+  });
+  document.getElementById("closeModal").addEventListener("click", closeModal);
+  mask.addEventListener("click", function(e){ if (e.target === mask) closeModal(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape" && mask.classList.contains("on")) closeModal(); });
+
+  /* year */
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* 兜底：若观察器完全没生效（老浏览器/异常），2.2 秒后强制显示，避免整页空白 */
+  setTimeout(function(){
+    if (document.querySelectorAll(".rv.in").length > 0) return;
+    [].forEach.call(document.querySelectorAll(".rv"), function(el){
+      el.classList.add("in");
+    });
+  }, 2200);
+
+  /* smooth anchor with sticky offset */
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'), function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href");
+      if (id.length < 2) return;
+      var t = document.querySelector(id);
+      if (!t) return;
+      e.preventDefault();
+      var y = t.getBoundingClientRect().top + window.scrollY - 78;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    });
+  });
+})();
+</script>
+</body>
+</html>
