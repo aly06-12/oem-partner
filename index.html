@@ -140,7 +140,10 @@
   .id-card.top{border-color:#BDD6FA;background:linear-gradient(180deg,#F6FAFF,#fff)}
   .id-card .mono{display:block;margin-bottom:10px}
   .id-card h3{margin:0;font-size:19px;font-weight:700;letter-spacing:-.01em}
-  .id-card .sub{margin:7px 0 20px;font-size:13px;color:var(--ink-3)}
+  .id-card .sub{margin:7px 0 0;font-size:13px;color:var(--ink-3)}
+  .id-price{margin:16px 0 20px;display:flex;align-items:baseline;gap:9px;padding-bottom:16px;border-bottom:1px solid var(--line-2)}
+  .id-price .p{font-family:var(--mono);font-size:27px;font-weight:700;color:var(--blue);letter-spacing:-.02em;line-height:1}
+  .id-price .l{font-size:11px;color:var(--ink-3);letter-spacing:.08em}
   .id-card ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
   .id-card li{position:relative;padding-left:24px;font-size:13.5px;color:var(--ink-2);line-height:1.65}
   .id-card li::before{content:"";position:absolute;left:2px;top:8px;width:11px;height:6px;border-left:1.8px solid var(--blue);border-bottom:1.8px solid var(--blue);transform:rotate(-45deg)}
@@ -432,6 +435,7 @@
           <span class="mono">Referral Partner</span>
           <h3>OEM 推荐官</h3>
           <div class="sub">轻资产，赚差价分成</div>
+          <div class="id-price"><span class="l">标价</span><span class="p">¥5,999</span></div>
           <ul>
             <li><b>专属邀请链接</b>，带个人标识，OEM 可自助注册</li>
             <li>链接<b>单次有效、默认 1 天时效</b>，推荐关系清晰可追溯</li>
@@ -446,6 +450,7 @@
           <span class="mono">OEM Admin</span>
           <h3>OEM 管理员</h3>
           <div class="sub">重经营，赚品牌与服务溢价</div>
+          <div class="id-price"><span class="l">标价</span><span class="p">¥2,999</span></div>
           <ul>
             <li><b>独立域名</b>与自有品牌，客户认的是你</li>
             <li><b>独立收款码</b>，资金进自己的账户</li>
@@ -455,6 +460,11 @@
             <li>套用<b>标准定价模板</b>，当天即可上架销售</li>
           </ul>
         </div>
+      </div>
+
+      <div class="price-note rv">
+        <b>两项身份同时开通，标价合计 ¥8,998。</b>页面所示均为标价，实际合作价按你的客群结构与推荐节奏单独核算，
+        由顾问一对一说清楚——合适就做，不合适也会直说。
       </div>
     </div>
   </section>
